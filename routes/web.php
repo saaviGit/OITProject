@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/course', ['uses'=> 'CourseController@index']);
+Route::get('/show', function () {
+    return view('assignments.show');
+});
 
-Route::resource('course', 'CourseController');
+Route::get('/edit', function () {
+    return view('assignments.edit');
+});
+
+Route::resource('assignments','assignmentsController');
+
+

@@ -70,6 +70,7 @@
                 <a href="">Student Registration</a>
                 <a href="">Instructor Registration</a>
                 <a href="{{ url('/course') }}">Course Registration</a>
+                <a href="{{ url('/assignments') }}">Assignments</a>
 
 
             </div>
